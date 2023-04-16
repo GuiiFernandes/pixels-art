@@ -1,0 +1,157 @@
+:root {
+
+  --black: rgb(10, 10, 10);
+
+  --purple: rgb(47, 16, 80);
+
+  --lilac: rgb(100, 0, 205);
+
+  --white: white;
+
+  --blue: rgb(0, 103, 250);
+
+  --silkscreen: 'Silkscreen';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: var(--silkscreen), cursive;
+}
+
+body {
+  background-image: url('./img/buildings-pixel-art-cityscape-4k-cl.jpg');
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 75%;
+  padding: 5rem;
+  max-width: 80rem;
+  background: rgba(47, 16, 80, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+#color-palette {
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+#settings {
+  justify-content: center;
+}
+
+#color-palette , #settings {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: auto;
+  padding: 1.5rem 0;
+}
+
+.color {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#button-random-color {
+  background-image: url('./img/atualizar.png');
+}
+
+#clear-board {
+  background-image: url('./img/icons8-excluir-50.png');
+}
+
+#generate-board {
+  background-image: url('./img/icons8-ok-48.png');
+}
+
+#button-random-color , #clear-board , #generate-board {
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  border-radius: 50%;
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+}
+
+#button-random-color:active , #clear-board:active , #generate-board:active {
+  background-color: var(--blue);
+}
+
+#pixel-board {
+  line-height: 0;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  width: fit-content;
+}
+
+.pixel {
+  border: 1px solid black;
+  font-size: 0;
+}
+
+label {
+  color: white;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  color: white;
+  border-radius: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.7rem;
+  width: 70%;
+}
+
+#input-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#input-container2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 80%;
+}
